@@ -51,9 +51,3 @@ document.querySelectorAll('.version-grid [select-option]').forEach(item => {
         
     })
 })
-
-document.querySelectorAll('.number-grid [clear-all]').forEach(item => {
-    item.addEventListener('click', event => {
-        bible.clear()      
-    })
-})
