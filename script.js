@@ -18,8 +18,6 @@ const outputNumberTextElement = document.querySelector('[output-number]')
 
 const bible = new Bible(outputBookTextElement, outputVersionTextElement, outputNumberTextElement)
 
-bible.clear()
-
 document.querySelectorAll('.bible-grid [data-book]').forEach(item => {
     item.addEventListener('click', event => {
         bible.outputBookTextElement.innerHTML = item.innerHTML
@@ -41,12 +39,16 @@ document.querySelectorAll('.number-grid [data-number]').forEach(item => {
 document.querySelectorAll('.version-grid [select-option]').forEach(item => {
     item.addEventListener('click', event => {
         if (bible.outputBookTextElement.innerHTML === '' || bible.outputVersionTextElement.innerHTML === '' || bible.outputNumberTextElement.innerHTML === '') return;
-        if (item.innerHTML === 'BibleHub') {
+        if (item.innerHTML === 'BibleHub Parallel') {
             window.open("https://biblehub.com/" + bible.outputBookTextElement.innerHTML.replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");        
         }
         if (item.innerHTML === 'BibleGateway') {
             window.open("https://www.biblegateway.com/passage/?search=" + bible.outputBookTextElement.innerHTML.toLowerCase() + "%20" + bible.outputNumberTextElement.innerHTML + "&version=" + bible.outputVersionTextElement.innerHTML);        
         }
+        if (item.innerHTML === 'BibleHub Interlinear') {
+            window.open("https://biblehub.com/interlinear/" + bible.outputBookTextElement.innerHTML.replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");            
+        }
+        
     })
 })
 
