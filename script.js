@@ -6,8 +6,6 @@ class Bible {
     }    
 
         clear() {
-        this.outputBookTextElement.innerHTML = ''
-        this.outputVersionTextElement.innerHTML = ''
         this.outputNumberTextElement.innerHTML = ''        
     }
 }
@@ -32,7 +30,7 @@ document.querySelectorAll('.version-grid [data-version]').forEach(item => {
 
 document.querySelectorAll('.number-grid [data-number]').forEach(item => {
     item.addEventListener('click', event => {
-        bible.outputNumberTextElement.innerHTML = item.innerHTML        
+        bible.outputNumberTextElement.innerHTML += item.innerHTML
     })
 })
 
@@ -49,5 +47,11 @@ document.querySelectorAll('.version-grid [select-option]').forEach(item => {
             window.open("https://biblehub.com/interlinear/" + bible.outputBookTextElement.innerHTML.replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");            
         }
         
+    })
+})
+
+document.querySelectorAll('.number-grid [clear-all]').forEach(item => {
+    item.addEventListener('click', event => {
+        bible.clear()
     })
 })

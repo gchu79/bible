@@ -27,7 +27,7 @@ body {
     grid-template-rows: minmax(60px,auto) repeat(1,30px);
     border: 2px solid black;
     outline: none;
-    background-color: rgba(255,255,255,.75);    
+    background-color: rgba(255, 255, 255, 0.75);    
 }
 
 
@@ -54,7 +54,7 @@ body {
     font-weight: bold;
     border: 1px solid black;
     outline: none;
-    background-color: rgba(255,255,255,.75);
+    background-color: rgba(136, 124, 124, 0.75);
 }
 
 .number-grid > button:hover {
@@ -84,7 +84,7 @@ body {
     font-weight: bold;
     border: 1px solid black;
     outline: none;
-    background-color: rgba(255,255,255,.75);
+    background-color: rgba(136, 124, 124, 0.75);
 }
 
 .version-grid > button:hover {
@@ -118,7 +118,7 @@ body {
     font-weight: bold;
     border: 1px solid black;
     outline: none;
-    background-color: rgba(255,255,255,.75);
+    background-color: rgba(136, 124, 124, 0.75);
 }
 
 .span-two {
@@ -127,7 +127,7 @@ body {
 
 .output {
     grid-column: 1 / -1;
-    background-color: rgba(255,255,25,.75); 
+    background-color: rgba( 219, 221, 224, 0.75 );
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
