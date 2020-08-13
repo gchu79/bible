@@ -5,9 +5,15 @@ class Bible {
         this.outputNumberTextElement = outputNumberTextElement
     }    
 
-        clear() {
+        clearnumber() {
         this.outputNumberTextElement.innerHTML = ''        
     }
+    
+        clearversion() {
+        this.outputVersionTextElement.innerHTML = ''        
+    }    
+    
+    
 }
 
 const outputBookTextElement = document.querySelector('[output-book]')
@@ -33,7 +39,14 @@ document.querySelectorAll('.bible-grid [data-book]').forEach(item => {
 
 document.querySelectorAll('.version-grid [data-version]').forEach(item => {
     item.addEventListener('click', event => {
-        bible.outputVersionTextElement.innerHTML = item.innerHTML              
+        if (bible.outputVersionTextElement.innerHTML.includes(item.innerHTML)) return
+        if (bible.outputVersionTextElement.innerHTML.split(";").length > 2 ) return
+        if (bible.outputVersionTextElement.innerHTML === "") {
+            bible.outputVersionTextElement.innerHTML = item.innerHTML
+        }
+        else {
+            bible.outputVersionTextElement.innerHTML += ";" + item.innerHTML
+        }        
     })
 })
 
@@ -48,6 +61,7 @@ document.querySelectorAll('.number-grid [data-number]').forEach(item => {
 
 document.querySelectorAll('.version-grid [select-option]').forEach(item => {
     item.addEventListener('click', event => {
+        if (bible.outputVersionTextElement.innerHTML === '') {bible.outputVersionTextElement.innerHTML = 'ESV'}
         if (bible.outputBookTextElement.innerHTML === '' || bible.outputVersionTextElement.innerHTML === '' || bible.outputNumberTextElement.innerHTML === '') return;
         if (item.innerHTML === 'BibleHub Parallel') {
             window.open("https://biblehub.com/" + bible.outputBookTextElement.innerHTML.replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");        
@@ -62,8 +76,14 @@ document.querySelectorAll('.version-grid [select-option]').forEach(item => {
     })
 })
 
-document.querySelectorAll('.number-grid [clear-all]').forEach(item => {
+document.querySelectorAll('.number-grid [clear-number]').forEach(item => {
     item.addEventListener('click', event => {
-        bible.clear()
+        bible.clearnumber()
+    })
+})
+
+document.querySelectorAll('.version-grid [clear-version]').forEach(item => {
+    item.addEventListener('click', event => {
+        bible.clearversion()
     })
 })

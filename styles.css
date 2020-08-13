@@ -38,7 +38,7 @@ body {
     justify-content:center;
     align-content:center;
     color: rgba(0,0,0,.75);
-    font-size: 2rem;    
+    font-size: 1.5rem;    
     min-height: 5vh;
     grid-template-columns: repeat(1,100px);
     grid-template-rows: minmax(60px,auto) repeat(1,30px);
@@ -86,6 +86,12 @@ body {
     grid-template-columns: repeat(1,200px);
     grid-template-rows: minmax(60px,auto) repeat(38,30px);
 }
+
+.version-grid > blank {
+    font-size: 1rem;
+}
+
+
 
 .version-grid > button {
     cursor: pointer;
