@@ -4,20 +4,20 @@
     font-weight:normal;
 }
 
-H1 {
-    font-size: 2rem;  
+h1 {
+    font-size: 1.5rem;  
     font-weight: bold;
     border: 2px solid black;
     text-align: center
 }
 
-H2 {
-    font-size: 1.25rem;  
+h2 {
+    font-size: 1rem;  
     text-align: center  
 }
 
 footer {
-    font-size: 1.25rem;    
+    font-size: 1rem;    
     text-align: center 
         
 }
