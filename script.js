@@ -61,6 +61,8 @@ document.querySelectorAll('.number-grid [data-number]').forEach(item => {
 document.querySelectorAll('.version-grid [select-option]').forEach(item => {
     item.addEventListener('click', event => {
         if (bible.outputVersionTextElement.innerHTML === '') {bible.outputVersionTextElement.innerHTML = 'ESV'}
+        if (bible.outputNumberTextElement.innerHTML === '') {bible.outputNumberTextElement.innerHTML = '1'}
+        
         if (bible.outputBookTextElement.innerHTML === '' || bible.outputVersionTextElement.innerHTML === '' || bible.outputNumberTextElement.innerHTML === '') return;
         if (item.innerHTML === 'BibleHub Parallel') {
             window.open("https://biblehub.com/" + bible.outputBookTextElement.innerHTML.replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");        
