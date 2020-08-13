@@ -75,6 +75,14 @@ document.querySelectorAll('.version-grid [select-option]').forEach(item => {
             console.log(window.idx);
             window.open("https://insight.org/resources/bible/" + stuff[window.idx].Swindoll);            
         }
+         if (item.innerHTML === 'Stedman') {
+            console.log(window.idx);
+            window.open("https://www.raystedman.org/bible-overview/adventuring/" + stuff[window.idx].Stedman);            
+        }        
+         if (item.innerHTML === 'Constable') {
+            console.log(window.idx);
+            window.open("https://www.planobiblechapel.org/tcon/notes/html/" + stuff[window.idx].Constable);            
+        }         
         
     })
 })
