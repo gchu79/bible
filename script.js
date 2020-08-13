@@ -11,9 +11,7 @@ class Bible {
     
         clearversion() {
         this.outputVersionTextElement.innerHTML = ''        
-    }    
-    
-    
+    }
 }
 
 const outputBookTextElement = document.querySelector('[output-book]')
@@ -24,14 +22,15 @@ const outputDataMaxTextElement = document.querySelector('[data-max]')
 const bible = new Bible(outputBookTextElement, outputVersionTextElement, outputNumberTextElement)
 
 var stuff = JSON.parse(document.getElementById('stuff').innerHTML);
+var idx
 
 document.querySelectorAll('.bible-grid [data-book]').forEach(item => {
     item.addEventListener('click', event => {
         bible.outputBookTextElement.innerHTML = item.innerHTML
         for (var i = 0; i < stuff.length; i++) {
             if (stuff[i].Book === item.innerHTML) {
-                console.log(stuff[i].Chapter);
                 document.querySelector('[data-max]').innerHTML = stuff[i].Chapter;
+                window.idx = i;
             }
         }
     })
@@ -71,6 +70,10 @@ document.querySelectorAll('.version-grid [select-option]').forEach(item => {
         }
         if (item.innerHTML === 'BibleHub Interlinear') {
             window.open("https://biblehub.com/interlinear/" + bible.outputBookTextElement.innerHTML.replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");            
+        }
+        if (item.innerHTML === 'Swindoll') {
+            console.log(window.idx);
+            window.open("https://insight.org/resources/bible/" + stuff[window.idx].Swindoll);            
         }
         
     })
