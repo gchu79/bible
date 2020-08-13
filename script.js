@@ -13,24 +13,36 @@ class Bible {
 const outputBookTextElement = document.querySelector('[output-book]')
 const outputVersionTextElement = document.querySelector('[output-version]')
 const outputNumberTextElement = document.querySelector('[output-number]')
+const outputDataMaxTextElement = document.querySelector('[data-max]')
 
 const bible = new Bible(outputBookTextElement, outputVersionTextElement, outputNumberTextElement)
+
+var stuff = JSON.parse(document.getElementById('stuff').innerHTML);
 
 document.querySelectorAll('.bible-grid [data-book]').forEach(item => {
     item.addEventListener('click', event => {
         bible.outputBookTextElement.innerHTML = item.innerHTML
+        for (var i = 0; i < stuff.length; i++) {
+            if (stuff[i].Book === item.innerHTML) {
+                console.log(stuff[i].Chapter);
+                document.querySelector('[data-max]').innerHTML = stuff[i].Chapter;
+            }
+        }
     })
 })
 
 document.querySelectorAll('.version-grid [data-version]').forEach(item => {
     item.addEventListener('click', event => {
-        bible.outputVersionTextElement.innerHTML = item.innerHTML      
+        bible.outputVersionTextElement.innerHTML = item.innerHTML              
     })
 })
 
 document.querySelectorAll('.number-grid [data-number]').forEach(item => {
     item.addEventListener('click', event => {
         bible.outputNumberTextElement.innerHTML += item.innerHTML
+        if (parseInt(bible.outputNumberTextElement.innerHTML) > document.querySelector('[data-max]').innerHTML) {
+            bible.outputNumberTextElement.innerHTML = document.querySelector('[data-max]').innerHTML;
+        }
     })
 })
 

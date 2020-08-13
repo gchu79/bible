@@ -4,6 +4,23 @@
     font-weight:normal;
 }
 
+H1 {
+    font-size: 2rem;  
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: center
+}
+
+H2 {
+    font-size: 1.25rem;  
+    text-align: center  
+}
+
+footer {
+    font-size: 1.25rem;    
+    text-align: center 
+        
+}
 body {
     padding: 0;
     margin: 0;
