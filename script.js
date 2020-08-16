@@ -65,13 +65,13 @@ document.querySelectorAll('.version-grid [select-option]').forEach(item => {
         
         if (bible.outputBookTextElement.innerHTML === '' || bible.outputVersionTextElement.innerHTML === '' || bible.outputNumberTextElement.innerHTML === '') return;
         if (item.innerHTML === 'BibleHub Parallel') {
-            window.open("https://biblehub.com/" + bible.outputBookTextElement.innerHTML.replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");        
+            window.open("https://biblehub.com/" + bible.outputBookTextElement.innerHTML.replace('Song of Solomon','Songs').replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");        
         }
         if (item.innerHTML === 'BibleGateway') {
             window.open("https://www.biblegateway.com/passage/?search=" + bible.outputBookTextElement.innerHTML.toLowerCase() + "%20" + bible.outputNumberTextElement.innerHTML + "&version=" + bible.outputVersionTextElement.innerHTML);        
         }
         if (item.innerHTML === 'BibleHub Interlinear') {
-            window.open("https://biblehub.com/interlinear/" + bible.outputBookTextElement.innerHTML.replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");            
+            window.open("https://biblehub.com/interlinear/" + bible.outputBookTextElement.innerHTML.replace('Song of Solomon','Songs').replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + "-1.htm");            
         }
         if (item.innerHTML === 'Swindoll') {
             console.log(window.idx);
