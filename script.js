@@ -31,6 +31,7 @@ document.querySelectorAll('.bible-grid [data-book]').forEach(item => {
             if (stuff[i].Book === item.innerHTML) {
                 document.querySelector('[data-max]').innerHTML = stuff[i].Chapter;
                 window.idx = i;
+                bible.outputNumberTextElement.innerHTML = 1;
             }
         }
     })
@@ -84,8 +85,15 @@ document.querySelectorAll('.version-grid [select-option]').forEach(item => {
          if (item.innerHTML === 'Constable') {
             console.log(window.idx);
             window.open("https://www.planobiblechapel.org/tcon/notes/html/" + stuff[window.idx].Constable);            
-        }         
-        
+        }
+         if (item.innerHTML === 'BlueLetterBible.Org') {
+            console.log(window.idx);
+            window.open("https://www.blueletterbible.org");            
+        }        
+         if (item.innerHTML === 'Bible.Org') {
+            console.log(window.idx);
+            window.open("https://bible.org/");            
+        }
     })
 })
 
