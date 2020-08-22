@@ -23,6 +23,7 @@ const bible = new Bible(outputBookTextElement, outputVersionTextElement, outputN
 
 var stuff = JSON.parse(document.getElementById('stuff').innerHTML);
 var idx
+var book
 
 document.querySelectorAll('.bible-grid [data-book]').forEach(item => {
     item.addEventListener('click', event => {
@@ -31,7 +32,7 @@ document.querySelectorAll('.bible-grid [data-book]').forEach(item => {
             if (stuff[i].Book === item.innerHTML) {
                 document.querySelector('[data-max]').innerHTML = stuff[i].Chapter;
                 window.idx = i;
-                bible.outputNumberTextElement.innerHTML = 1;
+                bible.outputNumberTextElement.innerHTML = '';
             }
         }
     })
@@ -86,13 +87,21 @@ document.querySelectorAll('.version-grid [select-option]').forEach(item => {
             console.log(window.idx);
             window.open("https://www.planobiblechapel.org/tcon/notes/html/" + stuff[window.idx].Constable);            
         }
+         if (item.innerHTML === 'Bible Project') {
+            console.log(window.idx);
+            window.book = bible.outputBookTextElement.innerHTML
+            window.book = window.book.replace('Genesis','Genesis-1-11').replace('Exodus','Exodus-1-18').replace('1 Kings','1-2-Kings').replace('2 Kings','1-2-Kings').replace('1 Chronicles','1-2-Chronicles').replace('2 Chronicles','1-2-Chronicles').replace('Song of Solomon','Song-of-Songs').replace('Ezra','Ezra-Nehemih').replace('Nehemiah','Ezra-Nehemiah').replace('Nehemih','Nehemiah').replace('1 John','1-3-John').replace('2 John','1-3-John').replace('3 John','1-3-John').replace(' ','-')  
+            window.open("https://www.bibleproject.com/explore/" + window.book);            
+        }        
+        
+        
          if (item.innerHTML === 'BlueLetterBible.Org') {
             console.log(window.idx);
             window.open("https://www.blueletterbible.org");            
         }        
          if (item.innerHTML === 'Bible.Org') {
             console.log(window.idx);
-            window.open("https://bible.org/");            
+            window.open("https://bible.org/");
         }
     })
 })
