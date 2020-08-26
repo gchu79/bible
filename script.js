@@ -2,7 +2,7 @@ class Bible {
     constructor(outputBookTextElement, outputVersionTextElement, outputBookNumberElement) {
         this.outputBookTextElement = outputBookTextElement
         this.outputVersionTextElement = outputVersionTextElement
-        this.outputNumberTextElement = outputNumberTextElement
+        this.outputNumberTextElement = outputNumberTextElement   
     }    
 
         clearnumber() {
@@ -22,7 +22,7 @@ const outputDataMaxTextElement = document.querySelector('[data-max]')
 const bible = new Bible(outputBookTextElement, outputVersionTextElement, outputNumberTextElement)
 
 var stuff = JSON.parse(document.getElementById('stuff').innerHTML);
-var idx
+var idx = 0;
 var book
 
 document.querySelectorAll('.bible-grid [data-book]').forEach(item => {
@@ -41,7 +41,7 @@ document.querySelectorAll('.bible-grid [data-book]').forEach(item => {
 document.querySelectorAll('.version-grid [data-version]').forEach(item => {
     item.addEventListener('click', event => {
         if (bible.outputVersionTextElement.innerHTML.includes(item.innerHTML)) return
-        if (bible.outputVersionTextElement.innerHTML.split(";").length > 2 ) return
+        if (bible.outputVersionTextElement.innerHTML.split(";").length > 3 ) return
         if (bible.outputVersionTextElement.innerHTML === "") {
             bible.outputVersionTextElement.innerHTML = item.innerHTML
         }
@@ -60,7 +60,7 @@ document.querySelectorAll('.number-grid [data-number]').forEach(item => {
     })
 })
 
-document.querySelectorAll('.version-grid [select-option]').forEach(item => {
+document.querySelectorAll('.output-grid [select-option]').forEach(item => {
     item.addEventListener('click', event => {
         if (bible.outputVersionTextElement.innerHTML === '') {bible.outputVersionTextElement.innerHTML = 'ESV'}
         if (bible.outputNumberTextElement.innerHTML === '') {bible.outputNumberTextElement.innerHTML = '1'}
@@ -95,7 +95,7 @@ document.querySelectorAll('.version-grid [select-option]').forEach(item => {
         }        
         
         
-         if (item.innerHTML === 'BlueLetterBible.Org') {
+         if (item.innerHTML === 'BlueLetterBible') {
             console.log(window.idx);
             window.open("https://www.blueletterbible.org");            
         }        
