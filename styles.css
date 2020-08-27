@@ -64,7 +64,7 @@ h2 {
     justify-content:flex-start;
     align-content:flex-start;
     min-height: 25vh;
-    grid-template-columns: repeat(1,160px);
+    grid-template-columns: repeat(1,165px);
     grid-template-rows: minmax(60px,auto) repeat(22,28px);
 
 }
@@ -75,7 +75,7 @@ h2 {
     font: 1.25rem Arial, san-serif;
     border: 1px solid black;
     align-content:center;
-    font-weight: bold;
+    font-weight: normal;
     color: #0e0ec7;
     text-align: center;
     outline: none;
@@ -141,7 +141,7 @@ h2 {
     justify-content:flex-start;
     align-content:flex-start;
     min-height: 25vh;
-    grid-template-columns: repeat(3,150px);
+    grid-template-columns: repeat(3,155px);
     grid-template-rows: minmax(60px,auto) repeat(40,28px);
     margin-left: auto;
     margin-right: 10%;
