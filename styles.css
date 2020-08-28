@@ -31,7 +31,7 @@ h2 {
     background:#00AAFF;
     position:relative;
     height: 94%;
-    width: 55%; /* Sizing - any length */
+    width: 57%; /* Sizing - any length */
     padding:80px 0 20px 0; /* Header height and footer height */
     margin:0 10px 0 10px; /* Center content */
     -moz-box-sizing:border-box;
@@ -176,7 +176,7 @@ h2 {
     justify-content:flex-start;
     align-content:flex-start;
     min-height: 25vh;
-    grid-template-columns: repeat(1,110px);
+    grid-template-columns: repeat(1,105px);
     grid-template-rows: minmax(60px,auto) repeat(22,28px);
 }
 .number-grid > blank {
@@ -208,7 +208,7 @@ h2 {
     justify-content:flex-end;
     align-content:flex-start;
     min-height: 25vh;
-    grid-template-columns: repeat(1,125px);
+    grid-template-columns: repeat(1,115px);
     grid-template-rows: minmax(60px,auto) repeat(22,28px);
 
 
