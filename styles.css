@@ -64,7 +64,7 @@ h2 {
     justify-content:flex-start;
     align-content:flex-start;
     min-height: 25vh;
-    grid-template-columns: repeat(1,163px);
+    grid-template-columns: repeat(1,160px);
     grid-template-rows: minmax(60px,auto) repeat(22,28px);
 
 }
@@ -141,7 +141,7 @@ h2 {
     justify-content:flex-start;
     align-content:flex-start;
     min-height: 25vh;
-    grid-template-columns: repeat(3,163px);
+    grid-template-columns: repeat(3,160px);
     grid-template-rows: minmax(60px,auto) repeat(40,28px);
     margin-left: auto;
     margin-right: 10%;
