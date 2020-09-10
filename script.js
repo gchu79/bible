@@ -53,10 +53,28 @@ document.querySelectorAll('.version-grid [data-version]').forEach(item => {
 
 document.querySelectorAll('.number-grid [data-number]').forEach(item => {
     item.addEventListener('click', event => {
+        if ((bible.outputNumberTextElement.innerHTML === "") & (item.innerHTML === "0")) return
         bible.outputNumberTextElement.innerHTML += item.innerHTML
         if (parseInt(bible.outputNumberTextElement.innerHTML) > document.querySelector('[data-max]').innerHTML) {
             bible.outputNumberTextElement.innerHTML = document.querySelector('[data-max]').innerHTML;
         }
+    })
+})
+
+document.querySelectorAll('.number-grid [operation-number]').forEach(item => {
+    item.addEventListener('click', event => {
+
+        if ((item.innerHTML === "-") && ( parseInt(bible.outputNumberTextElement.innerHTML) === 1)) return
+        if ((item.innerHTML === "+") && ( parseInt(bible.outputNumberTextElement.innerHTML) >= document.querySelector('[data-max]').innerHTML )) return
+
+        if (item.innerHTML === "+") {
+            if (bible.outputNumberTextElement.innerHTML === "") {bible.outputNumberTextElement.innerHTML = "0"}
+            bible.outputNumberTextElement.innerHTML = parseInt(bible.outputNumberTextElement.innerHTML) + 1;
+        }
+        if (item.innerHTML === "-") {
+            if (bible.outputNumberTextElement.innerHTML === "") {bible.outputNumberTextElement.innerHTML = document.querySelector('[data-max]').innerHTML}
+            bible.outputNumberTextElement.innerHTML = parseInt(bible.outputNumberTextElement.innerHTML) - 1;
+        }        
     })
 })
 
