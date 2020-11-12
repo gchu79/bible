@@ -40,6 +40,11 @@ document.querySelectorAll('.bible-grid [data-book]').forEach(item => {
 
 document.querySelectorAll('.version-grid [data-version]').forEach(item => {
     item.addEventListener('click', event => {
+		if (item.innerHTML === 'GRK-HEB') {
+			if (bible.outputNumberTextElement.innerHTML === '') {bible.outputNumberTextElement.innerHTML = '1'};
+            window.open("https://biblehub.com/interlinear/" + bible.outputBookTextElement.innerHTML.replace('Song of Solomon','Songs').replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");            
+        }
+		if (item.innerHTML.includes("GRK")) return
         if (bible.outputVersionTextElement.innerHTML.includes(item.innerHTML)) return
         if (bible.outputVersionTextElement.innerHTML.split(";").length > 3 ) return
         if (bible.outputVersionTextElement.innerHTML === "") {
@@ -93,8 +98,16 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
         if (item.innerHTML === 'BibleHub Interlinear') {
             window.open("https://biblehub.com/interlinear/" + bible.outputBookTextElement.innerHTML.replace('Song of Solomon','Songs').replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + "-1.htm");            
         }
+        if ((item.innerHTML === 'Pawson') && (stuff[window.idx].Constable.substring(0,2) === 'ot')) {
+			console.log(stuff[window.idx].Constable.substring(0,2));
+			window.open("https://www.davidpawson.org/resources/series/unlocking-the-new-testament");
+		}
+        if ((item.innerHTML === 'Pawson') && (stuff[window.idx].Constable.substring(0,2) === 'nt')) {
+			console.log(stuff[window.idx].Constable.substring(0,2));
+			window.open("https://www.davidpawson.org/resources/series/unlocking-the-new-testament-1");
+		}				
         if (item.innerHTML === 'Swindoll') {
-            console.log(window.idx);
+			console.log(window.idx);
             window.open("https://insight.org/resources/bible/" + stuff[window.idx].Swindoll);            
         }
          if (item.innerHTML === 'Stedman') {

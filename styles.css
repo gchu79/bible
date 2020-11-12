@@ -280,64 +280,72 @@ footer {
 }
 
 @media only screen and (max-width: 667px) {
+.content {
+    padding: 40px 0 0px 0; /* Header height and footer height */
+    margin:0 10px 0 0px; /* Center content */ 
+    }
+.sidebar2 {
+    padding: 60px 0 0px 0; /* Header height and footer height */
+    margin:0 10px 0 0px; /* Center content */     
+    }
     .bible-grid {
-        grid-template-columns: repeat(3,100px);
-        grid-template-rows: minmax(60px,auto) repeat(40,20px);        
+        grid-template-columns: repeat(3,60px);
+        grid-template-rows: minmax(60px,auto) repeat(40,30px);        
     } 
     .bible-grid > button {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .bible-grid > section {    
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     } 
     .bible-grid > blank {    
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }     
     .version-grid {   
-        grid-template-columns: repeat(1,75px);
-        grid-template-rows: minmax(60px,auto) repeat(40,20px);          
+        grid-template-columns: repeat(1,50px);
+        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
     }
     .version-grid > button {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .version-grid > section {    
-        font-size: 0.7rem;        
+        font-size: 0.6rem;        
     }
     .version-grid > blank {    
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }    
     .number-grid {   
-        grid-template-columns: repeat(1,75px);
-        grid-template-rows: minmax(60px,auto) repeat(40,20px);          
+        grid-template-columns: repeat(1,40px);
+        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
     }
     .number-grid > button {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .number-grid > section {    
-        font-size: 0.7rem;    
+        font-size: 0.6rem;    
     }
     .number-grid > blank {    
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }  
     .number-grid > button[operation-number] {
         font-weight: bold;
         font-size:1rem;
     }    
     .output-grid {   
-        grid-template-columns: repeat(1,75px);
-        grid-template-rows: minmax(60px,auto) repeat(40,20px);          
+        grid-template-columns: repeat(1,50px);
+        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
     }
     .output-grid > button {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .output-grid > section {    
-        font-size: 0.7rem;    
+        font-size: 0.6rem;    
     }
     .output-grid > output {    
-        font-size: 0.7rem;    
+        font-size: 0.6rem;    
     } 
     .output-grid > blank {    
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     } 
     
     h1 {
