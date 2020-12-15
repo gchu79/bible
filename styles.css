@@ -282,7 +282,7 @@ footer {
 @media only screen and (max-width: 667px) {
 .content {
     padding: 40px 0 0px 0; /* Header height and footer height */
-    margin:0 10px 0 0px; /* Center content */ 
+    margin:0 10px 0 0px; /* Center content */     
     }
 .sidebar2 {
     padding: 60px 0 0px 0; /* Header height and footer height */
