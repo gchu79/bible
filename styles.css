@@ -353,8 +353,8 @@ footer {
     font-size: min(2vh, 12px);   
     }
 
-    h2 {
-        font-size: min(1vh, 10px);
+    header {
+        font-size: min(1.2vh, 12px);
     }
     footer {
         font-size: min(1.2vh, 12px);        
