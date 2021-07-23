@@ -337,16 +337,16 @@ footer {
         grid-template-rows: minmax(60px,auto) repeat(40,30px);          
     }
     .output-grid > button {
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     }
     .output-grid > section {    
-        font-size: 0.6rem;    
+        font-size: 0.4rem;    
     }
     .output-grid > output {    
-        font-size: 0.6rem;    
+        font-size: 0.4rem;    
     } 
     .output-grid > blank {    
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     } 
     
     h1 {
