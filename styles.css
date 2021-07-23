@@ -18,13 +18,14 @@ h1 {
     font-size: min(3vh, 20px);   
     font-weight: bold;
     border: 2px solid black;
-    text-align: center
+    text-align: center;
 }
 
 h2 {
     font-size: min(2vh, 16px);  
     text-align: center;
-    font-weight: normal
+    font-size: min(2vh, 16px);
+    font-weight: normal;
 }
 
 .content {
