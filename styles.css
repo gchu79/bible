@@ -22,9 +22,9 @@ h1 {
 }
 
 h2 {
-    font-size: min(2vh, 16px);  
+    font-size: min(1.5vh, 14px);  
     text-align: center;
-    font-size: min(2vh, 16px);
+    font-size: min(1.5vh, 14px);
     font-weight: normal;
 }
 
@@ -281,13 +281,13 @@ footer {
 }
 
 @media only screen and (max-width: 667px) {
-.content {
-    padding: 40px 0 0px 0; /* Header height and footer height */
-    margin:0 10px 0 0px; /* Center content */     
+    .content {
+        padding: 40px 0 0px 0; /* Header height and footer height */
+        margin:0 10px 0 0px; /* Center content */     
     }
-.sidebar2 {
-    padding: 60px 0 0px 0; /* Header height and footer height */
-    margin:0 10px 0 0px; /* Center content */     
+    .sidebar2 {
+        padding: 60px 0 0px 0; /* Header height and footer height */
+        margin:0 10px 0 0px; /* Center content */     
     }
     .bible-grid {
         grid-template-columns: repeat(3,60px);
@@ -354,7 +354,7 @@ footer {
     }
 
     h2 {
-        font-size: min(1.2vh, 12px);
+        font-size: min(1vh, 10px);
     }
     footer {
         font-size: min(1.2vh, 12px);        
