@@ -15,17 +15,24 @@ header{
     z-index:110;
 }
 h1 {
-    font-size: min(3vh, 20px);   
+    font-size: min(2vh, 16px);   
     font-weight: bold;
     border: 2px solid black;
     text-align: center;
 }
 
 h2 {
-    font-size: min(1.5vh, 14px);  
+    font-size: min(1.5vh, 12px);  
     text-align: center;
-    font-size: min(1.5vh, 14px);
+    font-size: min(1.5vh, 12px);
     font-weight: normal;
+}
+
+p {
+    font-size: min(2vh, 16px);  
+    text-align: center;
+    font-weight: normal; 
+    background: #00AAFF;
 }
 
 .content {
@@ -360,6 +367,9 @@ footer {
     }
     footer {
         font-size: min(1.2vh, 12px);        
+    }
+    p {
+    font-size: min(1.2vh, 12px);
     }
     
 }
