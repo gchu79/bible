@@ -373,4 +373,90 @@ footer {
     }
     
 }
+@media only screen and (min-width: 667px) and (max-width: 900px) {
+    .content {
+        padding: 40px 0 0px 0; /* Header height and footer height */
+        margin:0 10px 0 0px; /* Center content */     
+    }
+    .sidebar2 {
+        padding: 60px 0 0px 0; /* Header height and footer height */
+        margin:0 10px 0 0px; /* Center content */     
+    }
+    .bible-grid {
+        grid-template-columns: repeat(3,100px);
+        grid-template-rows: minmax(60px,auto) repeat(40,30px);        
+        margin-left: 5%;
+        margin-right: 5%;        
+    } 
+    .bible-grid > button {
+        font-size: 0.8rem;
+    }
+    .bible-grid > section {    
+        font-size: 0.8rem;
+    } 
+    .bible-grid > blank {    
+        font-size: 0.8rem;
+    }     
+    .version-grid {   
+        grid-template-columns: repeat(1,100px);
+        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
+    }
+    .version-grid > button {
+        font-size: 0.8rem;
+    }
+    .version-grid > section {    
+        font-size: 0.8rem;        
+    }
+    .version-grid > blank {    
+        font-size: 0.8rem;
+    }    
+    .number-grid {   
+        grid-template-columns: repeat(1,80px);
+        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
+    }
+    .number-grid > button {
+        font-size: 0.8rem;
+    }
+    .number-grid > section {    
+        font-size: 0.8rem;    
+    }
+    .number-grid > blank {    
+        font-size: 0.8rem;
+    }  
+    .number-grid > button[operation-number] {
+        font-weight: bold;
+        font-size:0.6rem;
+    }    
+    .output-grid {   
+        grid-template-columns: repeat(1,100px);
+        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
+    }
+    .output-grid > button {
+        font-size: 0.8rem;
+    }
+    .output-grid > section {    
+        font-size: 0.8rem;    
+    }
+    .output-grid > output {    
+        font-size: 0.8rem;    
+    } 
+    .output-grid > blank {    
+        font-size: 0.8rem;
+    } 
+    
+    h1 {
+    font-size: min(2vh, 12px);   
+    }
+
+    header {
+        font-size: min(1.2vh, 12px);
+    }
+    footer {
+        font-size: min(1.2vh, 12px);        
+    }
+    p {
+    font-size: min(1.2vh, 12px);
+    }
+    
+}
     
