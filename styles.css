@@ -316,30 +316,30 @@ footer {
         grid-template-rows: minmax(60px,auto) repeat(40,30px);          
     }
     .version-grid > button {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
     .version-grid > section {    
-        font-size: 0.6rem;        
+        font-size: 0.5rem;        
     }
     .version-grid > blank {    
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }    
     .number-grid {   
         grid-template-columns: repeat(1,40px);
         grid-template-rows: minmax(60px,auto) repeat(40,30px);          
     }
     .number-grid > button {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
     .number-grid > section {    
-        font-size: 0.6rem;    
+        font-size: 0.5rem;    
     }
     .number-grid > blank {    
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }  
     .number-grid > button[operation-number] {
         font-weight: bold;
-        font-size:1rem;
+        font-size:0.6rem;
     }    
     .output-grid {   
         grid-template-columns: repeat(1,50px);
