@@ -134,6 +134,13 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
             console.log(window.idx);
             window.open("https://bible.org/");
         }
+         if (item.innerHTML === 'MounceGreek') {
+            console.log(window.idx);
+            window.open("https://www.billmounce.com/greek-dictionary");
+        }
+        
+        
+        
     })
 })
 
