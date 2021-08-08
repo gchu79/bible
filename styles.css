@@ -298,7 +298,7 @@ footer {
     }
     .bible-grid {
         grid-template-columns: repeat(3,50px);
-        grid-template-rows: minmax(60px,auto) repeat(40,30px);        
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);        
         margin-left: 5%;
         margin-right: 5%;        
     } 
@@ -313,7 +313,7 @@ footer {
     }     
     .version-grid {   
         grid-template-columns: repeat(1,50px);
-        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
     }
     .version-grid > button {
         font-size: 0.4rem;
@@ -326,7 +326,7 @@ footer {
     }    
     .number-grid {   
         grid-template-columns: repeat(1,40px);
-        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
     }
     .number-grid > button {
         font-size: 0.4rem;
@@ -343,7 +343,7 @@ footer {
     }    
     .output-grid {   
         grid-template-columns: repeat(1,50px);
-        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
     }
     .output-grid > button {
         font-size: 0.4rem;
@@ -384,7 +384,7 @@ footer {
     }
     .bible-grid {
         grid-template-columns: repeat(3,100px);
-        grid-template-rows: minmax(60px,auto) repeat(40,30px);        
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);        
         margin-left: 5%;
         margin-right: 5%;        
     } 
@@ -399,7 +399,7 @@ footer {
     }     
     .version-grid {   
         grid-template-columns: repeat(1,100px);
-        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
     }
     .version-grid > button {
         font-size: 0.7rem;
@@ -412,7 +412,7 @@ footer {
     }    
     .number-grid {   
         grid-template-columns: repeat(1,80px);
-        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
     }
     .number-grid > button {
         font-size: 0.7rem;
@@ -429,7 +429,7 @@ footer {
     }    
     .output-grid {   
         grid-template-columns: repeat(1,100px);
-        grid-template-rows: minmax(60px,auto) repeat(40,30px);          
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
     }
     .output-grid > button {
         font-size: 0.7rem;
