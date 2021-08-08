@@ -92,7 +92,7 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
         if (item.innerHTML === 'BibleHub Parallel') {
             window.open("https://biblehub.com/" + bible.outputBookTextElement.innerHTML.replace('Song of Solomon','Songs').replace(' ','_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + ".htm");        
         }
-        if (item.innerHTML === 'BibleGateway') {
+        if (item.innerHTML === 'Bible Gateway') {
             window.open("https://www.biblegateway.com/passage/?search=" + bible.outputBookTextElement.innerHTML.toLowerCase() + "%20" + bible.outputNumberTextElement.innerHTML + "&version=" + bible.outputVersionTextElement.innerHTML);        
         }
         if (item.innerHTML === 'BibleHub Interlinear') {
@@ -126,7 +126,7 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
         }        
         
         
-         if (item.innerHTML === 'BlueLetterBible') {
+         if (item.innerHTML === 'Blue Letter Bible') {
             console.log(window.idx);
             window.open("https://www.blueletterbible.org");            
         }        
@@ -134,7 +134,7 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
             console.log(window.idx);
             window.open("https://bible.org/");
         }
-         if (item.innerHTML === 'MounceGreek') {
+         if (item.innerHTML === 'Mounce Greek') {
             console.log(window.idx);
             window.open("https://www.billmounce.com/greek-dictionary");
         }
