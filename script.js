@@ -123,7 +123,8 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
             window.book = bible.outputBookTextElement.innerHTML
             window.book = window.book.replace('Genesis','Genesis-1-11').replace('Exodus','Exodus-1-18').replace('1 Kings','1-2-Kings').replace('2 Kings','1-2-Kings').replace('1 Chronicles','1-2-Chronicles').replace('2 Chronicles','1-2-Chronicles').replace('Song of Solomon','Song-of-Songs').replace('Ezra','Ezra-Nehemih').replace('Nehemiah','Ezra-Nehemiah').replace('Nehemih','Nehemiah').replace('1 John','1-3-John').replace('2 John','1-3-John').replace('3 John','1-3-John').replace(' ','-')  
             window.open("https://www.bibleproject.com/explore/" + window.book);            
-        }        
+        } 
+        
         
         
          if (item.innerHTML === 'Blue Letter Bible') {
@@ -138,7 +139,11 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
             console.log(window.idx);
             window.open("https://www.billmounce.com/greek-dictionary");
         }
-        
+
+         if (item.innerHTML === 'Truth for Life') {
+            console.log(window.idx);
+            window.open("https://truthforlife.org/resources/?type=sermon&scripture=" + bible.outputBookTextElement.innerHTML);
+        }
         
         
     })
