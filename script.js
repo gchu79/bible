@@ -144,6 +144,10 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
             console.log(window.idx);
             window.open("https://truthforlife.org/resources/?type=sermon&scripture=" + bible.outputBookTextElement.innerHTML);
         }
+         if (item.innerHTML === 'Grace to You') {
+            console.log(window.idx);
+            window.open("https://www.gty.org/library/bible-introductions/MSB" + stuff[window.idx].Macarthur);
+        }        
         
         
     })
