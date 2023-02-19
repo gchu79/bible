@@ -159,7 +159,12 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
         }
         if (item.innerHTML === 'Paul Tripp') {
             console.log(window.idx);
-            window.open("https://www.paultripp.com/bible-study/posts/" + stuff[window.idx].Paultripp + "-summary");
+            if (stuff[window.idx].Book === 'James') {
+                window.open("https://www.paultripp.com/bible-study/posts/" + stuff[window.idx].Paultripp + "-summary1");
+            }
+            else {
+                window.open("https://www.paultripp.com/bible-study/posts/" + stuff[window.idx].Paultripp + "-summary");
+            }
         }
         
         
