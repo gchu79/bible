@@ -125,7 +125,7 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
         }
         if (item.innerHTML === 'Constable') {
             console.log(window.idx);
-            window.open("https://www.planobiblechapel.org/tcon/notes/html/" + stuff[window.idx].Constable);
+            window.open("https://soniclight.com/tcon/notes/html/" + stuff[window.idx].Constable);
         }
         if (item.innerHTML === 'Bible Project') {
             console.log(window.idx);
