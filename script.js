@@ -156,7 +156,7 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
         }
         if (item.innerHTML === 'Grace to You') {
             console.log(window.idx);
-            window.open("https://www.blueletterbible.org/Comm/macarthur_john/bible-introductions/" + stuff[window.idx].Book.replace(' ', '').replace('SongofSolomon', 'songofsongs') + "-intro.cfm");
+            window.open("https://www.blueletterbible.org/Comm/macarthur_john/bible-introductions/" + stuff[window.idx].Book.replace('Song of Solomon', 'songofsongs').replace(' ', '') + "-intro.cfm");
         }
         if (item.innerHTML === 'Paul Tripp') {
             console.log(window.idx);
@@ -186,6 +186,7 @@ document.querySelectorAll('.version-grid [clear-version]').forEach(item => {
         bible.clearversion()
     })
 })
+
 
 
 
