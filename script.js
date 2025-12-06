@@ -167,8 +167,10 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
                 window.open("https://www.paultripp.com/bible-study/posts/" + stuff[window.idx].Paultripp + "-summary");
             }
         }
-        
-        
+        if (item.innerHTML === 'Text Highlight') {
+            console.log(window.idx);
+            window.open("https://gchu79.github.io/keyword/");
+        }
         
     })
 })
@@ -184,5 +186,6 @@ document.querySelectorAll('.version-grid [clear-version]').forEach(item => {
         bible.clearversion()
     })
 })
+
 
 
