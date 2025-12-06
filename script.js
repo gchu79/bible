@@ -107,11 +107,11 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
         if (item.innerHTML === 'BibleHub Interlinear') {
             window.open("https://biblehub.com/interlinear/" + bible.outputBookTextElement.innerHTML.replace('Song of Solomon', 'Songs').replace(' ', '_').toLowerCase() + "/" + bible.outputNumberTextElement.innerHTML + "-1.htm");
         }
-        if ((item.innerHTML === 'Pawson') && (stuff[window.idx].Constable.substring(0, 2) === 'ot')) {
+        if ((item.innerHTML === 'Pawson') && (window.idx < 39)) {
             console.log(stuff[window.idx].Constable.substring(0, 2));
             window.open("https://www.davidpawson.org/resources/series/unlocking-the-new-testament");
         }
-        if ((item.innerHTML === 'Pawson') && (window.idx < 39)) {
+        if ((item.innerHTML === 'Pawson') && (window.idx > 38)) {
             console.log(stuff[window.idx].Constable.substring(0, 2));
             window.open("https://www.davidpawson.org/resources/series/unlocking-the-new-testament-1");
         }
@@ -184,4 +184,5 @@ document.querySelectorAll('.version-grid [clear-version]').forEach(item => {
         bible.clearversion()
     })
 })
+
 
