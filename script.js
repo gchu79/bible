@@ -111,10 +111,11 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
             console.log(stuff[window.idx].Constable.substring(0, 2));
             window.open("https://www.davidpawson.org/resources/series/unlocking-the-new-testament");
         }
-        if ((item.innerHTML === 'Pawson') && (stuff[window.idx].Constable.substring(0, 2) === 'nt')) {
+        if ((item.innerHTML === 'Pawson') && (window.idx < 39)) {
             console.log(stuff[window.idx].Constable.substring(0, 2));
             window.open("https://www.davidpawson.org/resources/series/unlocking-the-new-testament-1");
         }
+
         if (item.innerHTML === 'Swindoll') {
             console.log(window.idx);
             window.open("https://insight.org/resources/bible/" + stuff[window.idx].Swindoll);
@@ -183,3 +184,4 @@ document.querySelectorAll('.version-grid [clear-version]').forEach(item => {
         bible.clearversion()
     })
 })
+
