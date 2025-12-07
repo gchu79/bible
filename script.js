@@ -171,6 +171,10 @@ document.querySelectorAll('.output-grid [select-option]').forEach(item => {
             console.log(window.idx);
             window.open("https://gchu79.github.io/keyword/");
         }
+        if (item.innerHTML === 'First Letter') {
+            console.log(window.idx);
+            window.open("https://gchu79.github.io/firstletter/");
+        }
         
     })
 })
@@ -186,6 +190,7 @@ document.querySelectorAll('.version-grid [clear-version]').forEach(item => {
         bible.clearversion()
     })
 })
+
 
 
 
